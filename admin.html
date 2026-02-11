@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة تحكم منصة أمير</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>لوحة التحكم - منصة أمير</h1>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="products.html">المنتجات</a>
+    <a href="cart.html">السلة 🛒</a>
+  </nav>
+</header>
+
+<section class="admin">
+  <h2>إدارة المنتجات</h2>
+  <input type="text" id="name" placeholder="اسم المنتج">
+  <input type="number" id="price" placeholder="السعر">
+  <button class="btn" onclick="addProduct()">إضافة المنتج</button>
+  <div id="admin-products"></div>
+</section>
+
+<script src="script.js"></script>
+<script>
+  loadAdminProducts();
+</script>
+
+</body>
+</html>
